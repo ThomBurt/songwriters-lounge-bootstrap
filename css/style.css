@@ -117,3 +117,13 @@ h1 {
     background: #0097a7;
     color: antiquewhite;
   }
+
+
+  .footer-custom {
+      align-items: center;
+  }
+
+  .button-custom {
+    background-color: #008ed6;
+    color: azure;
+}
