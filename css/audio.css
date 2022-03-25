@@ -10,6 +10,7 @@ h1 {
 
 .navbar {
   border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
 }
  
  * {
@@ -51,8 +52,13 @@ h1 {
       border-radius: 5px;
   }
   
- 
- 
+
+ .feature-txt {
+   padding: 5px;
+   background-color: #f57de3;
+   border-radius: 7px;
+   opacity: 0.8;
+ }
  
  .button {
      margin: 10px;
@@ -125,11 +131,16 @@ h1 {
      top: 30%;
      border: 5px solid darkcyan;
      padding: 10px;
+
  }
  
  .audio-btns {
      margin-top: 30px;
      text-align: center;
+     padding: 10px;
+     background-color: #0097a7;
+     border-radius: 50px;
+     opacity: 0.8;
  }
  
  .hide {
@@ -150,9 +161,6 @@ h1 {
    background-color: #ff0000;
    color: white;
    animation: blinker 1s linear infinite;
-   position: absolute;
-   left: 50%;
-   transform: translate(-50%, -50%);
  }
  
  @keyframes blinker {
@@ -161,38 +169,9 @@ h1 {
    }
  }
  
- .voice-txt {
-   font-size: 25px;
-   color: white;
-   text-align: center;
- }
- 
 
  
  
  footer {
-   background: black;
-   width: 100%;
-   padding: 20px 35px;
-   text-align: center;
+  border-top: #008ed6 3px solid;
  }
- footer h2 {
-   display: inline;
-   color: white;
-   font-size: 30px;
-   margin: 0;
- }
- footer div {
-   float: right;
-   line-height: 1.5;
-   text-align: right;
- }
- footer a {
-   color: white;
-   margin: 10px 10px 10px 10px;
- }
- 
- 
- 
-
- 
