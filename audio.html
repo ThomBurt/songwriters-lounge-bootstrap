@@ -103,20 +103,55 @@
 
 
 
-    <footer class="bg-dark text-center text-lg-start ">
-        <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-          <a href="/" class="header-sl-logo">
-            <img alt="Songwriters Lounge" src="img\SL LOGO NEW 2021 WHITE.png" 
-          width="250px" height="100px">  
-          </a> <br>
-   
-          <a class ="email" href="info@songwriterslounge.net" >info@songwriterslounge.net</a>
+
+        <footer id="main-footer" class="bg-dark ">
+            <div class="container">
+                <div class="row">
+                    <div class="d-inline-flex justify-content-between py-2 footer-custom col-sm-6">
+                        <a href="/" class="header-sl-logo col-8">
+                            <img alt="Songwriters Lounge" src="../assets/images/SL LOGO NEW 2021 WHITE.png" 
+                          width="250px" height="100px">  
+                          </a>
+                        <p class="col-lg-6 d-none d-lg-block email">Copyright &copy; <span id="year"></span></p>
+                        <a class ="col-lg-6 d-none d-lg-block email" href="info@songwriterslounge.net">info@songwriterslounge.net</a>
+                        <button class="btn button-custom col-4" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--Contact modal-->
+        <div class="modal fade text-dark" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email-input-contact">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Subject</label>
+                                <input type="text" class="form-control" id="subject-input-contact">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message-input-contact"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary col-12" id="send-contact-button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
-
-
-
 
 </body>
 
@@ -128,6 +163,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <script>// Get current year for the copyright
-    $('#year').text(new Date().getFullYear);
+    $('#year').text(new Date().getFullYear());
 </script>
 </html>
